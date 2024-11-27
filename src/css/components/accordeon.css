@@ -3,19 +3,32 @@
 */
 .accordeon {
     display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 
 details {
+    background-color: gainsboro;
     position: relative;
+    padding: 10px;
+    padding-right: 100px;
+    width: 10%;
+    border-radius: 10px;
+    max-height: 80px;
+    transition: max-height 1s ease;
+}
+
+details::after{
+    content: "";
+    height: 40px;
+    width: 40px;
+    background-color: gray;
+    position: absolute;
+    top: 30px;
+    right: 45px;
     transition: 1s ease;
 }
-details[open] {
-    margin-right: 200px;
-}
-details[open] div {
-    position: absolute;
-    top: 0;
-    left: 125px;
-    width: 175px;
+details[open]::after{
+    background-color: pink;
+    transform: rotate(90deg);
 }
