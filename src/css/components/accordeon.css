@@ -3,17 +3,19 @@
 */
 .accordeon {
     display: flex;
+    gap: 10px;
 }
 
 details {
     position: relative;
-    transition: 5s ease;
+    transition: 1s ease;
 }
-
-details>div {
-    position: relative;
+details[open] {
+    margin-right: 200px;
+}
+details[open] div {
+    position: absolute;
+    top: 0;
     left: 125px;
-    top: -85px;
     width: 175px;
-    margin-right: 140px;
 }
