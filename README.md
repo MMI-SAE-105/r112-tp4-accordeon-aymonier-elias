@@ -1,6 +1,6 @@
-- nom :
-- prénom :
-- URL Netlify :
+- nom : Aymonier
+- prénom : Elias
+- URL Netlify : https://whimsical-fairy-7c44a0.netlify.app
 
 # Travail
 
