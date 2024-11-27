@@ -14,21 +14,19 @@ details {
     padding-right: 100px;
     width: 10%;
     border-radius: 10px;
-    max-height: 80px;
-    transition: max-height 1s ease;
 }
 
 details::after{
     content: "";
-    height: 40px;
-    width: 40px;
-    background-color: gray;
+    border-top : 30px solid transparent;
+    border-bottom : 30px solid transparent;
+    border-left : 30px solid gray;
     position: absolute;
-    top: 30px;
+    top: 20px;
     right: 45px;
     transition: 1s ease;
 }
 details[open]::after{
-    background-color: pink;
+    border-left : 30px solid pink;
     transform: rotate(90deg);
 }
