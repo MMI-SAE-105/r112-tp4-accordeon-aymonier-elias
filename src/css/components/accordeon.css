@@ -7,6 +7,10 @@
     gap: 10px;
 }
 
+::marker{
+    color: gainsboro;
+}
+
 details {
     background-color: gainsboro;
     position: relative;
